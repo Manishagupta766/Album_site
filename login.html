@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <title>login and registration page</title>
+        <link rel="stylesheet" href="login.css">
+ 
+
+    
+    </head>
+    <body>
+      <div class="navbar">
+        <img class="logo-img" src="image/c.jpg" width="60" height="60" ALT="align box" style="border-radius: 60px;" ALIGN=left>
+          <a href="index.html">HOME</a>
+          <a href="m_contactus.html">Contact Us</a>
+          <!-- <a href="m_contactus.html">Photobook</a> -->
+          <a href="https://www.google.com/maps/@17.4396249,78.4427004,21z"target="_blank">Location</a>
+        <img class="logo-img" src="https://img2.pngio.com/fileuser-avatar-2png-wikimedia-commons-user-avatar-png-450_450.png" width="60" height="60"     ALT="align box" ALIGN=right>
+          <a href="login.html" class="right">LOGIN</a>
+        </div>
+      <br>
+     
+        <div class="hero">
+            <div class="form-box">
+                
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="registration()">Registration</button>
+            </div>
+            
+            <div class="social-icons">
+              <a  href="https://www.instagram.com/accounts/login/" target="_blank"><img src="image/instragrm1.jfif" style="width: 25px; height:25px;" ></a>
+              <a href="https://myaccount.google.com/?utm_source=sign_in_no_continue" target="_blank"><img src="image/google1.png" style="width: 25px; height:25px;"></a> 
+          <a href="https://twitter.com/LOGIN" target="_blank"><img src="image/twitter.png" style="width: 25px; height:25px;"></a> 
+             </div>
+<form  id="login" class="input-group">
+  
+    <input type="text" class="input-field" placeholder="user id" required> 
+  
+    <input type="text" class="input-field" placeholder="Enter your password" required> 
+
+   <input type="checkbox" class="chech-box"> <span>Remember password</span> 
+   <button type="submit" class="submit-btn">Log in</button>
+</form>
+<form id="registration"  class="input-group">
+    <!-- <form  class="input-group"> -->
+    <input type="text" class="input-field" placeholder="user id" required> 
+    <input type="text" class="input-field" placeholder="Enter your password" required> 
+    <input type="email" class="input-field" placeholder="Enter your email" required> 
+
+   <input type="checkbox" class="chech-box"> <span>Remember password</span> 
+   <button type="submit" class="submit-btn">Log in</button>
+</form>
+            </div>
+
+        </div>
+      
+        <script>
+           var x = document.getElementById("login");
+           var y = document.getElementById("registration");
+           var z = document.getElementById("btn");
+         function registration(){
+              x.style.left="-400px" ;
+              y.style.left="50px" ;
+           z.style.left="110px" ;
+
+           }
+          function login(){
+              x.style.left="50px" ;
+              y.style.left="450px" ;
+           z.style.left="0px" ;
+
+     }
+        </script>
+                
+                         
+       </body>         
+    </html>
